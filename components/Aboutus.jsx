@@ -84,8 +84,7 @@ export default function Aboutus() {
                     width={700}
                     height={400}
                     quality={60}
-                    // sizes="(max-width: 768px) 321px, (max-width: 1024px) 50vw, 700px"
-                    sizes="321px"
+                    sizes="(max-width: 768px) 321px, (max-width: 1024px) 50vw, 700px"
                     alt="Professional landscaper with gardening tools"
                     className=" w-full h-full object-contain rounded-3xl "
                   />
