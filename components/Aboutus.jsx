@@ -78,7 +78,7 @@ export default function Aboutus() {
             <div className="relative rounded-[3rem]">
               {/* Main Image */}
               <div className="flex justify-center items-center h-full">
-                <div className="relative w-[850px] h-auto ">
+                <div className="relative w-[700px] h-auto ">
                   <Image
                     src="/businesscard.webp"
                     width={700}
