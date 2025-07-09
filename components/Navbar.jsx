@@ -92,9 +92,9 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       
-        <div className={`fixed inset-0 z-50 md:hidden transition-all duration-150 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
+        <div className={`fixed inset-0 z-50 md:hidden transition-all h-screen duration-150 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
           <div
-            className="fixed inset-0 bg-black bg-opacity-50"
+            className="fixed inset-0 bg-black bg-opacity-50 h-screen"
             onClick={toggleMobileMenu}
           />
 
