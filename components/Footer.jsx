@@ -39,6 +39,7 @@ const contactInfo = [
   {
     icon: Mail,
     text: email,
+    customstyle:"break-all",
     href: `mailto:${email}`,
   },
 ]
@@ -108,7 +109,7 @@ export default function Footer() {
                    
                       <Link
                         href={contact.href}
-                        className="text-gray-300 hover:text-[#4ade80] transition-colors duration-200 text-sm"
+                        className={`text-gray-300 hover:text-[#4ade80] transition-colors duration-200 text-sm ${contact.customstyle ? contact.customstyle : ""} `}
                       >
                         {contact.text}
                       </Link>
