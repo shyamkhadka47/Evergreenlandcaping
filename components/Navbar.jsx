@@ -27,14 +27,13 @@ const mobileMenuItems = [
 const contactInfo = {
   address: address,
   phone1: phone1,
-  phone2:phone2,
+  phone2: phone2,
   email: email,
 };
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const pathname=usePathname()
- 
+  const pathname = usePathname();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -58,7 +57,11 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`${pathname==link.href ? "text-btnprimary" : "text-white"} text-lg hover:text-btnprimary transition-colors duration-200 flex items-center space-x-1 relative before:absolute ${pathname==link.href ? "before:w-1/2" : "before:w-0" }  hover:before:w-1/2 before:h-[3px] before:bg-btnsecondary before:bottom-[-10px] before:transition-all  `}
+                className={`${
+                  pathname == link.href ? "text-btnprimary" : "text-white"
+                } text-lg hover:text-btnprimary transition-colors duration-200 flex items-center space-x-1 relative before:absolute ${
+                  pathname == link.href ? "before:w-1/2" : "before:w-0"
+                }  hover:before:w-1/2 before:h-[3px] before:bg-btnsecondary before:bottom-[-10px] before:transition-all  `}
               >
                 <span>{link.name}</span>
               </Link>
@@ -88,35 +91,37 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      {isMobileMenuOpen && (
-        <div className="fixed inset-0 z-50 md:hidden">
+      
+        <div className={`fixed inset-0 z-50 md:hidden transition-transform duration-[.8s] ease-in  ${isMobileMenuOpen ? " translate-x-0" : " -translate-x-full"}`}>
           <div
             className="fixed inset-0 bg-black bg-opacity-50"
             onClick={toggleMobileMenu}
           />
 
           {/* Mobile Menu Content */}
-          <div className="fixed top-0 left-0 w-80 h-full bg-white shadow-xl">
+          <div
+            className={`fixed transform transition-transform duration-500 ease-in-out left-0 w-[65%] h-screen bg-primary shadow-xl mt-[100px] ${
+              isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+            } `}
+          >
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b">
               <div className="flex items-center space-x-3">
-                
                 <div>
-                  <h2 className="font-bold text-xl text-black">Evergreen</h2>
-                  <p className="text-lg text-secondary">Landscaping</p>
+                  <h2 className="font-bold text-xl text-white">Evergreen</h2>
+                  <p className="text-lg text-btnprimary font-bold">
+                    Landscaping
+                  </p>
                 </div>
               </div>
               <button
                 onClick={toggleMobileMenu}
-                className="p-2 text-gray-500 hover:text-gray-700"
+                className="p-2 text-white"
                 aria-label="Close mobile menu"
               >
                 <X className="w-6 h-6" />
               </button>
             </div>
-
-           
-           
 
             {/* Navigation Menu */}
             <div className="p-6 border-b">
@@ -125,7 +130,11 @@ export default function Navbar() {
                   <li key={item.name}>
                     <Link
                       href={item.href}
-                      className={`flex w-max relative items-center justify-between py-2  ${ pathname == item.href ? "text-primary" : " text-black"} before:absolute ${pathname == item.href ? "before:w-1/2" : "before:w-0"} hover:before:w-1/2 before:h-[3px] before:bottom-[-5px] before:bg-btnsecondary before:transition-all   hover:text-[#22c55e] transition-colors duration-200`}
+                      className={`flex w-max relative items-center justify-between py-2 text-white  ${
+                        pathname == item.href ? "text-primary" : " text-black"
+                      } before:absolute ${
+                        pathname == item.href ? "before:w-1/2" : "before:w-0"
+                      } hover:before:w-1/2 before:h-[3px] before:bottom-[-5px] before:bg-btnsecondary before:transition-all   hover:text-[#22c55e] transition-colors duration-200`}
                       onClick={toggleMobileMenu}
                     >
                       <span className="font-medium">{item.name}</span>
@@ -146,29 +155,38 @@ export default function Navbar() {
 
             {/* Contact Info */}
             <div className="p-6">
-              <h3 className="font-bold text-black mb-4">Contact Info</h3>
+              <h3 className="font-bold text-white mb-4">Contact Info</h3>
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
-                  <MapPin className="w-4 h-4 text-[#468a40] mt-1 flex-shrink-0" />
-                  <p className="text-sm text-black">{contactInfo.address}</p>
+                  <MapPin className="w-4 h-4 text-btnprimary  mt-1 flex-shrink-0" />
+                  <p className="text-sm text-white">{contactInfo.address}</p>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-4 h-4 text-[#468a40] flex-shrink-0" />
-                  <a href={`tel:${phone1}`} className="text-sm text-black">{contactInfo.phone1}</a>
+                  <Phone className="w-4 h-4 text-btnprimary  flex-shrink-0" />
+                  <a href={`tel:${phone1}`} className="text-sm text-white">
+                    {contactInfo.phone1}
+                  </a>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Phone className="w-4 h-4 text-[#468a40] flex-shrink-0" />
-                  <a href={`tel:${phone2}`} className="text-sm text-black">{contactInfo.phone2}</a>
+                  <Phone className="w-4 h-4 text-btnprimary  flex-shrink-0" />
+                  <a href={`tel:${phone2}`} className="text-sm text-white">
+                    {contactInfo.phone2}
+                  </a>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Mail className="w-4 h-4 text-[#468a40] flex-shrink-0" />
-                  <a href={`mailto:${email}`} className="text-sm text-black">{contactInfo.email}</a>
+                  <Mail className="w-4 h-4 text-btnprimary  flex-shrink-0" />
+                  <a
+                    href={`mailto:${email}`}
+                    className="text-sm text-white break-all"
+                  >
+                    {contactInfo.email}
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      )}
+      
     </>
   );
 }
