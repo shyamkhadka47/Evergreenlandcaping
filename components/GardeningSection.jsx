@@ -56,7 +56,7 @@ export default function GardeningSection() {
                       height={500}
                       priority
                       quality={30}
-                      sizes="(max-width:768px) 33vw 600px"
+                      sizes="(max-width:768px) 33vw, 600px"
                       alt={`Slide ${index + 1}`}
                       className="w-full h-full object-cover"
                     />
