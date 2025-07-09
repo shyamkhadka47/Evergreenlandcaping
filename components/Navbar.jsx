@@ -92,7 +92,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       
-        <div className={`fixed inset-0 z-50 md:hidden transition-transform duration-[.8s] ease-in  ${isMobileMenuOpen ? " translate-x-0" : " -translate-x-full"}`}>
+        <div className={`fixed inset-0 z-50 md:hidden transition-all duration-150 ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"}`}>
           <div
             className="fixed inset-0 bg-black bg-opacity-50"
             onClick={toggleMobileMenu}
@@ -100,7 +100,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Content */}
           <div
-            className={`fixed transform transition-transform duration-500 ease-in-out left-0 w-[65%] h-screen bg-primary shadow-xl mt-[100px] ${
+            className={`fixed transform transition-transform duration-500 ease-in-out left-0 w-[65%] h-full bg-primary shadow-xl mt-[100px] ${
               isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
             } `}
           >
