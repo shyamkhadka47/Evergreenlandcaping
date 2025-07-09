@@ -1,7 +1,7 @@
 
 
 import { phone1 } from "@/utils/sitesetting"
-import { Check } from "lucide-react"
+import { ArrowRight, Check } from "lucide-react"
 import Link from "next/link"
 
 // FAQ data array with 8 questions and answers
@@ -98,9 +98,15 @@ export default function FAQ() {
         {/* Contact CTA */}
         <div className="text-center mt-3">
           <p className="text-primary mb-4">Still have questions?</p>
-          <Link href={`/contact`} className="bg-btnsecondary text-white px-8 py-3 rounded-full font-semibold hover:bg-[#e67a35] transition-colors duration-200">
-            Contact Us
-          </Link>
+          <div>
+              <Link
+                href={"/contact"}
+                className="inline-flex items-center space-x-3 bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#023d19cc]   transition-colors duration-300 shadow-lg"
+              >
+                <span>{"Contact Us"}</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
         </div>
       </div>
     </section>

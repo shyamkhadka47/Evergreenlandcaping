@@ -76,7 +76,7 @@ export default function Services() {
        
       }}
     >
-        <div className="absolute inset-0 bg-black opacity-70 z-20"></div>
+        <div className="absolute inset-0 bg-black/55 opacity-70 z-20"></div>
       <div className=" relative px-[5%] md:px-[10%] z-40">
         {/* Section Header */}
         <div className=" mb-10">

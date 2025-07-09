@@ -73,7 +73,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="text-white text-xl font-bold">
-            Evergreen<span className="text-[#4ade80]">Landscaping</span>
+            Evergreen<span className="text-[#4ade80] ml-2">Landscaping</span>
           </Link>
 
           {/* Mobile Menu Button */}

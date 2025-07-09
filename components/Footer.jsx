@@ -59,7 +59,7 @@ export default function Footer() {
             </Link>
 
             {/* Tagline */}
-            <p className="text-gray-300 text-sm mb-6 leading-relaxed">{companyTagline}</p>
+            <p className="text-gray-300 text-sm mb-6 leading-relaxed font-semibold">{companyTagline}</p>
 
             {/* Social Media Icons */}
             <div className="flex space-x-4">
@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links Section */}
-          <div className="lg:col-span-1 lg:ml-20">
+          <div className="lg:col-span-1 lg:ml-20 font-bold">
             <h3 className="text-white font-bold text-lg mb-6">QUICK LINKS</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Us Section */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 font-bold">
             <h3 className="text-white font-bold text-lg mb-6">CONTACT US</h3>
             <div className="space-y-4">
               {contactInfo.map((contact, index) => {
@@ -120,13 +120,13 @@ export default function Footer() {
           </div>
 
           {/* Newsletter Section */}
-          <div className="lg:col-span-1 lg:ml-20">
+          <div className="lg:col-span-1 lg:ml-20 font-bold">
             <h3 className="text-white font-bold text-lg mb-6">Working Hours</h3>
 
             {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"  ].map((el,i)=>(<>
             <div key={i} className="grid grid-cols-[100px_1fr]">
                 <p>{el}</p>
-                <p className={`${el == "Saturday" || el =="Sunday" ? "text-red-500" : " text-btnprimary"} ml-[-10px]`}>{`${el == "Saturday" || el =="Sunday" ? "Closed" :"8AM-5PM"}`}</p>
+                <p className={`${el == "Saturday" || el =="Sunday" ? "text-red-500" : " text-btnprimary"} ml-[-10px] font-normal`}>{`${el == "Saturday" || el =="Sunday" ? "Closed" :"8AM-5PM"}`}</p>
             </div>
             </>))}
           
@@ -134,9 +134,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Border/Copyright */}
-        <div className="border-t border-white border-opacity-20 mt-12 pt-8">
+        <div className="border-t border-white border-opacity-20 mt-12 pt-8  font-semibold">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-300 text-sm">© 2025 Evergreen Landscaping. All rights reserved.</p>
+            <p className=" text-md text-btnsecondary">© 2025 Evergreen Landscaping. All rights reserved.</p>
             <div className="flex space-x-6">
               <Link href="#" className="text-gray-300 hover:text-[#4ade80] text-sm transition-colors duration-200">
                 Terms of Service

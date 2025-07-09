@@ -17,7 +17,7 @@ const sectionData = {
   buttonText: "Call Us Now",
   buttonHref: phone1,
   customerSatisfaction: {
-    percentage: "98%",
+    percentage: "99%",
     label: "Customer Satisfaction",
     rating: 5,
   },
@@ -36,7 +36,7 @@ export default function GardeningSection() {
   return (
     <section className="bg-[#f5f5f0] mt-[100px] py-8">
       <div className="px-[5%] md:px-[10%]">
-        <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[72%_28%] gap-8 items-center">
           {/* Left Side - Image */}
           <div className="">
             <div className="relative">
@@ -100,9 +100,9 @@ export default function GardeningSection() {
 
             {/* Customer Satisfaction */}
             <div className="pt-8">
-              <div className="flex flex-col sm:flex-row items-start sm:items-center  space-x-6">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center   space-x-6">
                 {/* Customer Profile Images */}
-                <div className="flex -space-x-3">
+                <div className="flex -space-x-3 mb-5">
                   {customerProfiles.map((profile) => (
                     <div
                       key={profile.id}
@@ -121,9 +121,9 @@ export default function GardeningSection() {
                 </div>
 
                 {/* Satisfaction Stats */}
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-2">
                   <div>
-                    <div className="text-4xl font-bold text-gray-900">
+                    <div className="text-4xl lg:text-3xl font-extrabold text-gray-900">
                       {sectionData.customerSatisfaction.percentage}
                     </div>
                   </div>
@@ -135,7 +135,7 @@ export default function GardeningSection() {
                         (_, index) => (
                           <Star
                             key={index}
-                            className="w-5 h-5 fill-[#ff8c42] text-[#ff8c42]"
+                            className="w-4 h-4  xl:w-5 xl:h-5 fill-[#ff8c42] text-[#ff8c42]"
                           />
                         )
                       )}

@@ -32,7 +32,7 @@ export default function Aboutus() {
           <div className="space-y-8 order-1 lg:order-0">
             {/* About Us Label */}
             <div>
-              <span className="inline-block bg-btnsecondary text-white text-3xl font-semibold px-4 py-2 rounded-full uppercase tracking-wide">
+              <span className="inline-block bg-btnsecondary text-white text-3xl font-bold px-4 py-2 rounded-full uppercase tracking-wide">
                 {aboutData.label}
               </span>
             </div>

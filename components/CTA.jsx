@@ -7,20 +7,20 @@ import Link from "next/link"
 
 // CTA Banner data
 const ctaData = {
-  heading: "Looking For a Experience Landscaping Specialist?",
+  heading: "Looking For An Experience Landscaper?",
   phoneNumber:phone1,
   phoneLink: `tel:${phone1}`,
-  buttonText: "Contact With Us",
+  buttonText: "Contact Us",
   buttonLink: "/contact",
   gardenerImage: {
-    src: "/placeholder.svg?height=200&width=300",
+    src: "/ourwork6.webp",
     alt: "Professional female gardener with pruning tools",
   },
 }
 
 export default function CTA() {
   return (
-    <section className="bg-btnsecondary py-8 rounded-tl-3xl rounded-tr-3xl">
+    <section className="bg-btnprimary py-8 rounded-tl-3xl rounded-tr-3xl">
       <div className="px-[5%] md:px-[10%]">
         <div className="flex flex-col gap-3 sm:flex-row items-center justify-between">
           {/* Left - Gardener Image */}
@@ -60,7 +60,7 @@ export default function CTA() {
             <div>
               <Link
                 href={ctaData.buttonLink}
-                className="inline-flex items-center space-x-3 bg-white text-[#ff8c42] px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition-colors duration-200 shadow-lg"
+                className="inline-flex items-center space-x-3 bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-50 hover:text-secondary  transition-colors duration-200 shadow-lg"
               >
                 <span>{ctaData.buttonText}</span>
                 <ArrowRight className="w-5 h-5" />
