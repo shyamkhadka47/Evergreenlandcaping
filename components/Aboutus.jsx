@@ -83,7 +83,7 @@ export default function Aboutus() {
                     src="/businesscard.webp"
                     width={700}
                     height={400}
-                    // quality={75}
+                    quality={60}
                     sizes="(max-width: 768px) 200px, (max-width: 1024px) 50vw, 700px"
                     alt="Professional landscaper with gardening tools"
                     className=" w-full h-full object-contain rounded-3xl "
