@@ -34,7 +34,7 @@ const sliderImages = ["/work1.webp", "/work2.webp", "/steps.webp"];
 
 export default function GardeningSection() {
   return (
-    <section className="bg-[#f5f5f0] mt-[100px] py-8">
+    <section className="bg-[#f5f5f0]  py-8">
       <div className="px-[5%] md:px-[10%]">
         <div className="grid grid-cols-1 lg:grid-cols-[72%_28%] gap-8 items-center">
           {/* Left Side - Image */}

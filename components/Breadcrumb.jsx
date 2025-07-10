@@ -8,13 +8,14 @@ export default function Breadcrumb() {
   return (
     <div className=" flex gap-2 mb-5">
       <Link href={"/"} className=" text-2xl font-bold text-green-300">
-        Home {"/"}{" "}
+        Home
       </Link>
       <Link
         href={pathname}
-        className="font-semibold  text-2xl capitalize text-white underline underline-offset-2"
+        className="font-semibold  text-2xl capitalize text-white "
       >
-        {pathname.slice(1)}
+        {pathname =="/" ? <></>: "/"}
+       <span className="underline underline-offset-2"> {pathname.slice(1)}</span>
       </Link>
     </div>
   );
