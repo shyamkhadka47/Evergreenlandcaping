@@ -6,7 +6,7 @@ import Link from "next/link";
 
 // Section data
 const aboutData = {
-  label: "WHY CHOOSE US",
+  label: "WHY CHOOSE US ?",
   heading: "Evergreen Landscaping In Santa Fe",
   description:
     "Evergreen Landscaping is a passionate company that creates beautiful, sustainable outdoor spaces. Run by two brother's Jesus and Victor Vega, with a commitment to quality and customer satisfaction, we provide a wide range of services including landscape design, installation, maintenance, hardscaping, water features and irrigation.",
