@@ -155,7 +155,7 @@ export default function Navbar() {
 
             {/* Contact Info */}
             <div className="p-6">
-              <h3 className="font-bold text-white mb-4">Contact Info</h3>
+              <p className="font-bold text-white mb-4">Contact Info</p>
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-4 h-4 text-btnprimary  mt-1 flex-shrink-0" />
