@@ -124,6 +124,7 @@ export default function Services() {
                 </div>
                 <Link
                         href={service.readMoreLink}
+                        aria-label="Read More in Services page"
                         className="text-white w-max hover:scale-105  font-medium text-sm whitespace-nowrap px-4 py-2 bg-[#1a5f5f]  transition-all duration-300 rounded-full ml-[27px] sm:ml-[87px]"
                       >
                         Read More...

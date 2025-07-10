@@ -7,7 +7,7 @@ export default function Breadcrumb() {
 
   return (
     <div className=" flex gap-2 mb-5">
-      <Link href={"/"} className=" text-2xl font-bold text-green-300">
+      <Link href={"/"} aria-label="Homepage" className=" text-2xl font-bold text-green-300">
         Home
       </Link>
       <Link
