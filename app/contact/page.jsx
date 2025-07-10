@@ -13,6 +13,14 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
+export const metadata = {
+  title: "Evergreen Landscaping Best Landscaping in Santa Fe NM.",
+  description:
+    "Evergreen Landscaping in Santa Fe offers a range of commercial and residential landscaping services to meet all your needs.",
+};
+
+
+
 const title = "Contact Us";
 const desc =
   "Have questions about landscaping in Santa Fe? Want help with hardscaping, irrigation, or snow removal? Contact Evergreen Landscaping! We’re ready to listen and help make your outdoor space beautiful and safe all year long. Call or message us today!.";

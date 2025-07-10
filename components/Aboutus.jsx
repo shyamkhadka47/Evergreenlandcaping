@@ -65,7 +65,7 @@ export default function Aboutus() {
 
             {/* Read More Button */}
             <div>
-              <Link href={"/about"} className="inline-flex items-center space-x-2 bg-btnprimary text-white px-8 py-4 rounded-full font-semibold hover:bg-[#16a34a] transition-colors duration-200">
+              <Link href={"/about"} className="inline-flex items-center space-x-2 bg-btnprimary text-white hover:scale-105 transition-all duration-500 px-8 py-4 rounded-full font-semibold hover:bg-[#16a34a] ">
                 <span>{aboutData.buttonText}</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>

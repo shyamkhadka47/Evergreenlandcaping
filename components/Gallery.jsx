@@ -105,7 +105,7 @@ export default function Gallery() {
         <div className="text-center mt-12">
           <Link
             href="/projects"
-            className="inline-flex items-center space-x-2 bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-[#164545] transition-colors duration-200"
+            className="inline-flex items-center space-x-2 bg-primary text-green-300 hover:text-white px-8 py-4 rounded-full font-semibold hover:scale-110 transition-all duration-500"
           >
             <span>View All Projects</span>
           </Link>

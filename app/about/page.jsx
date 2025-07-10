@@ -4,6 +4,11 @@ import React from "react";
 import Image from "next/image";
 import CTA from "@/components/CTA";
 
+export const metadata={
+  title:"Evergreen Landscaping Best Landscaping in Santa Fe NM.",
+  description:"Evergreen Landscaping in Santa Fe offers a range of commercial and residential landscaping services to meet all your needs."
+}
+
 const title = "About Us";
 const desc =
   "Evergreen Landscaping helps people in Santa Fe make their yards look great. We build with stones (hardscaping), set up watering (irrigation), and remove snow. We love nature and work hard to keep outdoor spaces clean, safe, and happy.";
