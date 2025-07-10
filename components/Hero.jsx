@@ -7,7 +7,7 @@ export default function Hero({ title, desc, imgsrc }) {
   return (
     <>
       <section className="flex-col items-start w-full h-[600px] sm:h-[400px] mt-[100px] relative">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,_#000000d9_30%,_#16a34a8a_60%,_transparent_100%)] z-[9]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,_#000000b8_30%,_transparent_100%)] z-[9]"></div>
         <Image
           src={imgsrc}
           width={600}
