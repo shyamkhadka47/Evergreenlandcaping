@@ -3,7 +3,7 @@ import React from "react";
 
 
 export const metadata = {
-  title: "Our Projects",
+  title: "Our Projects - Evergreen Landscaping Best Landscaping In Santa Fe",
   description:
     "Evergreen Landscaping in Santa Fe offers a range of commercial and residential landscaping services to meet all your needs.",
 };

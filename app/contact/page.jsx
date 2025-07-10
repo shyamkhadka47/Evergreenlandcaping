@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 
 export const metadata = {
-  title: "Contact Us",
+  title: "Contact Us - Evergreen Landscaping Best Landscaping In Santa Fe",
   description:
     "Evergreen Landscaping in Santa Fe offers a range of commercial and residential landscaping services to meet all your needs.",
 };
