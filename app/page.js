@@ -8,7 +8,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 
 export const metadata = {
-  title: "Home - Evergreen Landscaping Best Landscaping in Santa Fe NM.",
+  title: "Home | Evergreen Landscaping Best Landscaping in Santa Fe NM.",
   description:
     "Evergreen Landscaping in Santa Fe offers a range of commercial and residential landscaping services to meet all your needs.",
 };

@@ -5,7 +5,7 @@ import Image from "next/image";
 import CTA from "@/components/CTA";
 
 export const metadata={
-  title:"About Us - Evergreen Landscaping Best Landscaping In Santa Fe",
+  title:"About Us",
   description:"Evergreen Landscaping in Santa Fe offers a range of commercial and residential landscaping services to meet all your needs."
 }
 

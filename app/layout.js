@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NextTopLoader from "nextjs-toploader";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -15,6 +16,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+export const metadata={
+  title:{
+    // default:"Evergreen Landscaping Best Landscaping in Santa Fe NM.",
+    template:" %s | Evergreen Landscaping Best Landscaping in Santa Fe NM."
+  }
+}
 
 export default function RootLayout({ children }) {
   return (
