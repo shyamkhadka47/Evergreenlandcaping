@@ -12,6 +12,7 @@ export default function Hero({ title, desc, imgsrc }) {
           src={imgsrc}
           width={600}
           height={400}
+          sizes="(max-width:768px) 33vw, 600px "
           alt="Landscaping in santa fe"
           className="w-full h-full object-cover"
         />
