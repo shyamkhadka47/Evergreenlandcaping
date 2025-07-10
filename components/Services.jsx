@@ -103,8 +103,8 @@ export default function Services() {
                 <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start space-x-6 space-y-4">
                   {/* Service Icon */}
                   <div className="">
-                    <div className="w-16 h-16 bg-[#1a5f5f] rounded-full flex items-center justify-center">
-                      <IconComponent className="w-8 h-8 text-white" />
+                    <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                      <IconComponent className="w-8 h-8 text-green-300" />
                     </div>
                   </div>
 
@@ -125,7 +125,7 @@ export default function Services() {
                 <Link
                         href={service.readMoreLink}
                         aria-label="Read More in Services page"
-                        className="text-white w-max hover:scale-105  font-medium text-sm whitespace-nowrap px-4 py-2 bg-[#1a5f5f]  transition-all duration-300 rounded-full ml-[27px] sm:ml-[87px]"
+                        className="text-green-400 w-max hover:scale-105  font-medium text-sm whitespace-nowrap px-4 py-2 bg-primary  transition-all duration-300 rounded-full ml-[27px] sm:ml-[87px]"
                       >
                         Read More...
                       </Link>
