@@ -2,6 +2,7 @@ import { phone1 } from "@/utils/sitesetting";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "./Breadcrumb";
+import { Phone } from "lucide-react";
 
 export default function Hero({ title, desc, imgsrc }) {
   return (
@@ -28,9 +29,9 @@ export default function Hero({ title, desc, imgsrc }) {
             <div className="flex gap-2">
               <Link
                 href={`tel:${phone1}`}
-                className="py-3 px-4 rounded-lg bg-btnprimary text-white font-bold"
+                className="py-2 px-4 rounded-2xl bg-btnsecondary text-primary font-bold flex gap-2"
               >
-                Call Us Now
+               <Phone size={20} className="text-primary mt-1"/><span > {phone1}</span>
               </Link>
             </div>
           </div>

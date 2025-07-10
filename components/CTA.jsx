@@ -60,7 +60,7 @@ export default function CTA() {
             <div>
               <Link
                 href={ctaData.buttonLink}
-                className="inline-flex items-center space-x-3 bg-secondary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-50 hover:text-secondary  transition-colors duration-200 shadow-lg"
+                className="inline-flex items-center space-x-3 bg-primary text-btnsecondary  px-8 py-4 rounded-full font-bold text-lg  hover:text-white  hover:scale-110 duration-500 transition-all shadow-lg"
               >
                 <span>{ctaData.buttonText}</span>
                 <ArrowRight className="w-5 h-5" />

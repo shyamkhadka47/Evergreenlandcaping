@@ -4,11 +4,11 @@ import { usePathname } from "next/navigation";
 
 export default function Breadcrumb() {
   const pathname = usePathname();
-
+console.log(pathname)
   return (
     <div className=" flex gap-2 mb-2">
       <Link href={"/"} aria-label="Homepage" className=" text-2xl font-bold text-green-300">
-        Home
+        {pathname.length ==1 ? "" : "Home"}
       </Link>
       <Link
         href={pathname}

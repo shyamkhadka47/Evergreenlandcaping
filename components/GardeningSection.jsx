@@ -1,6 +1,6 @@
 "use client"
 import { phone1 } from "@/utils/sitesetting";
-import { ArrowRight, Star } from "lucide-react";
+import {  Phone, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -92,10 +92,10 @@ export default function GardeningSection() {
                 href={`tel:${sectionData.buttonHref}`}
                 className="inline-flex items-center space-x-2 bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-[#247260] transition-colors duration-200 shadow-lg hover:shadow-xl"
               >
+                <Phone className="w-5 h-5 text-btnprimary" />
                 <span className="text-btnsecondary">
                   {sectionData.buttonText}
                 </span>
-                <ArrowRight className="w-5 h-5 text-btnprimary" />
               </Link>
             </div>
 
