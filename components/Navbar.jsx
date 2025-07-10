@@ -43,7 +43,7 @@ export default function Navbar() {
     <>
       {/* Desktop Navbar */}
       <nav className=" fixed z-[999] top-0  w-full bg-primary h-[100px] px-[5%] md:px-[10%] hidden md:block ">
-        <div className="flex mt-[30px] items-center justify-between">
+        <div className="flex mt-[30px] gap-3 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center ">
             <Link href="/" className="text-white text-2xl font-bold ">

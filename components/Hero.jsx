@@ -1,39 +1,39 @@
+import { phone1 } from "@/utils/sitesetting";
 import Image from "next/image";
+import Link from "next/link";
+import Breadcrumb from "./Breadcrumb";
 
-export default function HeroSection({ bannervideo }) {
+export default function Hero({ title, desc, imgsrc }) {
   return (
-    <div className="relative my-[30px] md:mt-[120px] container mx-auto  max-w-[90vw] h-[600px] md:h-[450px] rounded-2xl overflow-hidden">
-      {/* Background Image */}
-      {
-        <div className="absolute inset-0  w-full h-full">
-          <video
-            src="/Bob Haozous.mp4"
-            muted
-            autoPlay
-            playsInline
-            loop
-            className="w-full h-full object-cover"
-          ></video>
+    <>
+      <section className="flex-col items-start w-full h-[600px] sm:h-[400px] mt-[100px] relative">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,_#000000d9_30%,_#16a34a8a_60%,_transparent_100%)] z-[9]"></div>
+        <Image
+          src={imgsrc}
+          width={600}
+          height={400}
+          alt="Landscaping in santa fe"
+          className="w-full h-full object-cover"
+        />
 
-          {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-btnprimary/30 to-transparent"></div>
+        <div className="px-[5%] md:px-[10%]  ">
+          <div className="absolute z-40 max-w-3xl h-[300px]  top-12 flex flex-col gap-4 items-start pt-5">
+            <Breadcrumb />
+            <p className=" text-5xl text-btnsecondary font-bold capitalize">
+              {title}
+            </p>
+            <h1 className="text-white text-lg">{desc}</h1>
+            <div className="flex gap-2">
+              <Link
+                href={`tel:${phone1}`}
+                className="py-3 px-4 rounded-lg bg-btnprimary text-white font-bold"
+              >
+                Call Us Now
+              </Link>
+            </div>
+          </div>
         </div>
-      }
-
-      {/* Content Container */}
-      <div className="relative h-full flex flex-col justify-center px-8 md:px-16 lg:px-24">
-        <div className="max-w-4xl">
-          {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-medium text-white leading-tight mb-6">
-            {`Native American Storyteller Reflecting Culture, Identity, and History`}
-          </h1>
-
-          {/* Subheading */}
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-xl">
-            {`Discover the powerful sculptures and multimedia art by Bob Haozous, capturing the essence of history, humor, and modern life.`}
-          </p>
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
