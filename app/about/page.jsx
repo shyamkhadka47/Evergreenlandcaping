@@ -14,7 +14,7 @@ const desc =
   "Evergreen Landscaping helps people in Santa Fe make their yards look great. We build with stones (hardscaping), set up watering (irrigation), and remove snow. We love nature and work hard to keep outdoor spaces clean, safe, and happy.";
 const imgsrc = "/5.webp";
 
-const page = () => {
+export default function Page(){
   const founderServices = [
     "Lawn Care & Maintenance",
     "Custom Garden Design",
@@ -193,4 +193,3 @@ const page = () => {
   );
 };
 
-export default page;
