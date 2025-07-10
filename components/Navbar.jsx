@@ -142,14 +142,14 @@ export default function Navbar() {
                   </li>
                 ))}
 
-                <div>
+                <li>
                   <Link
                     href="#"
                     className="bg-btnsecondary -ml-2 mt-2 text-white px-8 py-3 rounded-full font-medium hover:bg-[#22c55e] transition-colors duration-200 "
                   >
                     Get A Quote
                   </Link>
-                </div>
+                </li>
               </ul>
             </div>
 
