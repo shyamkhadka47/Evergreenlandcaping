@@ -108,7 +108,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between p-6 border-b">
               <div className="flex items-center space-x-3">
                 <div>
-                  <h2 className="font-bold text-xl text-white">Evergreen</h2>
+                  <p className="font-bold text-xl text-white">Evergreen</p>
                   <p className="text-lg text-btnprimary font-bold">
                     Landscaping
                   </p>
