@@ -18,10 +18,10 @@ const imgsrc = "/3.webp";
 const LazyProjectGallery = dynamic(
   () => import("@/components/ProjectGallery"),
   {
-    ssr: false,
-    loading: () => {
+    // ssr: false,
+    loading: () => 
       <p>Loading....</p>;
-    },
+    
   }
 );
 
