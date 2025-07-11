@@ -19,8 +19,7 @@ const LazyProjectGallery = dynamic(
   () => import("@/components/ProjectGallery"),
   {
     // ssr: false,
-    loading: () => 
-      <p>Loading....</p>;
+    loading: () =>  <p>Loading....</p>
     
   }
 );
