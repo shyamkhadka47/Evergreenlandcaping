@@ -11,6 +11,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 import React from "react";
 
@@ -149,8 +150,8 @@ const Page = () => {
                     className="rounded-lg border bg-white text-gray-950 shadow-md hover:shadow-lg transition-shadow duration-300"
                   >
                     <div className="flex flex-col space-y-1.5 p-6 text-center pb-4">
-                      <div className="mx-auto mb-4 p-3 bg-green-100 rounded-full w-fit">
-                        <IconComponent className="h-8 w-8 text-green-600" />
+                      <div className="mx-auto mb-4 p-3 bg-primary rounded-full w-fit">
+                        <IconComponent className="h-8 w-8 text-[#4ade80]" />
                       </div>
                       <h3 className="text-2xl font-semibold leading-none tracking-tight text-gray-900">
                         {service.title}
@@ -187,10 +188,10 @@ const Page = () => {
                   >
                     <div className={isEven ? "lg:order-1" : "lg:order-2"}>
                       <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6">
-                        <div className="p-3 bg-green-100 rounded-full mr-4">
-                          <IconComponent className="h-8 w-8 text-green-600" />
+                        <div className="p-3 bg-primary rounded-full mr-4">
+                          <IconComponent className="h-8 w-8 text-[#4ade80]" />
                         </div>
-                        <h3 className="text-4xl font-bold text-gray-900">
+                        <h3 className="text-4xl font-bold text-btnsecondary">
                           {service.title}
                         </h3>
                       </div>
@@ -214,12 +215,12 @@ const Page = () => {
                       </div>
 
                       <div className="flex flex-wrap gap-4">
-                        <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-green-600 text-white hover:bg-green-700 h-10 px-4 py-2">
+                        <Link href={"/contact"} className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-[#4ade80] hover:bg-green-700 h-10 px-4 py-2">
                           Get Free Estimate
-                        </button>
-                        <button className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-200 bg-transparent hover:bg-gray-100 hover:text-gray-900 h-10 px-4 py-2">
+                        </Link>
+                        <Link href={"/project"} className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-200 bg-transparent hover:bg-gray-100 hover:text-gray-900 h-10 px-4 py-2">
                           View Portfolio
-                        </button>
+                        </Link>
                       </div>
                     </div>
 

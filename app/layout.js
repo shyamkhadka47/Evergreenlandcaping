@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NextTopLoader from "nextjs-toploader";
+import CallUsNow from "@/components/CallUsNow";
 
 
 const geistSans = localFont({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         <NextTopLoader color="#ff8f06" showSpinner={false} />
         <Navbar />
         {children}
+        <CallUsNow/>
         <Footer />
       </body>
     </html>
