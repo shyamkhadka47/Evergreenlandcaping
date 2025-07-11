@@ -41,6 +41,7 @@ export default function ProjectGallery() {
             alt=""
             width={800}
             height={600}
+            sizes="(max-width:768px) 50vw, 33vw"
             className="w-full mb-4 rounded-lg cursor-pointer break-inside-avoid shadow hover:scale-105 transition-transform duration-300"
             onClick={() => openSwiper(index)}
           />
