@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import React from "react";
 import Image from "next/image";
 import CTA from "@/components/CTA";
+import Link from "next/link";
 
 export const metadata={
   title:"About Us",
@@ -38,13 +39,13 @@ export default function Page(){
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                   
                   <Image
-                    src="/20.webp"
+                    src="/23.webp"
                     alt="Jesus and Victor Vega - Founders"
                     width={900}
                     height={700}
                     className="w-full h-full object-cover "
                   />
-                  <div className="absolute bottom-6 right-6 bg-orange-500 text-white rounded-2xl p-6 shadow-2xl">
+                  {/* <div className="absolute bottom-6 right-6 bg-orange-500 text-white rounded-2xl p-6 shadow-2xl">
                     <div className="text-center">
                       <div className="text-5xl font-bold mb-3">25+</div>
                       <div className="text-sm font-semibold">
@@ -53,15 +54,15 @@ export default function Page(){
                         Experience
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-green-500 rounded-full flex items-center justify-center shadow-2xl ">
+                {/* <div className="absolute -top-4 -right-4 w-24 h-24 bg-green-500 rounded-full flex items-center justify-center shadow-2xl ">
                   <div className="text-white text-center">
                     <div className="text-xs font-bold">Landscaping</div>
                     <div className="text-xs">EXPERTS</div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -107,10 +108,10 @@ export default function Page(){
               </div>
 
               <div className="pt-6">
-                <button className="bg-primary hover:bg-green-700 text-btnsecondary hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-xl flex items-center">
-                  Visit Our Garden
+                <Link href={"/projects"} className="bg-primary w-max hover:bg-green-700 text-btnsecondary hover:text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 shadow-xl flex items-center">
+                 See Our Work
                   <ArrowRight className="ml-2 w-5 h-5" />
-                </button>
+                </Link>
               </div>
             </div>
           </div>

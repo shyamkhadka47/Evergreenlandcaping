@@ -30,7 +30,7 @@ const customerProfiles = [
   { id: 3, src: "/placeholder.svg?height=40&width=40", alt: "Customer 3" },
 ];
 
-const sliderImages = ["/work1.webp", "/work2.webp", "/steps.webp"];
+const sliderImages = ["/23.webp", "/24.webp", "/25.webp"];
 
 export default function GardeningSection() {
   return (
