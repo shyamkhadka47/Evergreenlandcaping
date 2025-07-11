@@ -16,7 +16,7 @@ export const metadata = {
 const title = "We care for every detail.";
 const desc =
   "Evergreen Landscaping specializes in professional landscaping in Santa Fe, offering expert hardscaping, efficient irrigation systems, and reliable snow removal services to create stunning, low-maintenance outdoor spaces for homes and businesses year-round.";
-const imgsrc = "/ourwork4.webp";
+const imgsrc = "/43.webp";
 
 export default function Home() {
   return (
