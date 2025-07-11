@@ -45,7 +45,7 @@ const contactInfo = [
 ]
 
 const companyTagline =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "Evergreen Landscaping in Santa Fe helps make your yard nice and safe. We do patios, water systems, snow removal, and more. If you want great landscaping in Santa Fe, we’re here to help you enjoy your outdoor space."
 
 export default function Footer() {
   return (
@@ -62,7 +62,7 @@ export default function Footer() {
             {/* Tagline */}
             <p className="text-gray-300 text-sm mb-6 leading-relaxed font-semibold">{companyTagline}</p>
 
-            {/* Social Media Icons */}
+            Social Media Icons
             <div className="flex space-x-4">
               {socialLinks.map((social) => {
                 const IconComponent = social.icon
@@ -127,7 +127,7 @@ export default function Footer() {
             {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"  ].map((el,i)=>(<>
             <div key={i} className="grid grid-cols-[100px_1fr]">
                 <p>{el}</p>
-                <p className={`${el == "Saturday" || el =="Sunday" ? "text-red-500" : " text-btnprimary"} ml-[-10px] font-normal`}>{`${el == "Saturday" || el =="Sunday" ? "Closed" :"8AM-5PM"}`}</p>
+                <p className={`${el == "Saturday" || el =="Sunday" ? "text-red-500" : " text-[#4ade80]"} ml-[-10px] font-normal`}>{`${el == "Saturday" || el =="Sunday" ? "Closed" :"8AM-5PM"}`}</p>
             </div>
             </>))}
           
@@ -136,14 +136,12 @@ export default function Footer() {
 
         {/* Bottom Border/Copyright */}
         <div className="border-t border-white border-opacity-20 mt-12 pt-8  font-semibold">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-between items-start space-y-4 md:space-y-0">
             <p className=" text-md text-btnsecondary">© 2025 Evergreen Landscaping. All rights reserved.</p>
             <div className="flex space-x-6">
-              <Link href="#" className="text-gray-300 hover:text-[#4ade80] text-sm transition-colors duration-200">
-                Terms of Service
-              </Link>
-              <Link href="#" className="text-gray-300 hover:text-[#4ade80] text-sm transition-colors duration-200">
-                Privacy Policy
+             
+              <Link href="https://designtechjoy.com" className="border-[2px] border-btnsecondary py-2 px-1 rounded-md text-[#4ade80] text-sm transition-colors duration-200">
+              Designed & Developed By Design Tech Joy
               </Link>
             </div>
           </div>
