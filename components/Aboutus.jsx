@@ -32,14 +32,14 @@ export default function Aboutus() {
           <div className="space-y-8 order-1 lg:order-0">
             {/* About Us Label */}
             <div>
-              <span className="inline-block  text-btnsecondary text-3xl font-bold px-4 py-2 rounded-full uppercase tracking-wide">
+              <span className="inline-block  text-btnsecondary text-4xl sm:text-5xl font-bold px-4 py-2 rounded-full uppercase tracking-wide">
                 {aboutData.label}
               </span>
             </div>
 
             {/* Main Heading */}
             <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              <h2 className="text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight">
                 {aboutData.heading}
               </h2>
             </div>

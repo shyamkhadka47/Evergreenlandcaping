@@ -142,7 +142,7 @@ export default function Footer() {
             <p className=" text-md text-btnsecondary">© 2025 Evergreen Landscaping. All rights reserved.</p>
             <div className="flex space-x-6">
              
-              <Link href="https://designtechjoy.com" className="border-[2px] border-btnsecondary py-2 px-1 rounded-md text-[#4ade80] text-sm transition-colors duration-200">
+              <Link href="https://designtechjoy.com" target="_blank" className="border-b-[2px] border-btnsecondary py-2 px-1  text-[#4ade80] text-sm transition-colors duration-200">
               Designed & Developed By Design Tech Joy
               </Link>
             </div>

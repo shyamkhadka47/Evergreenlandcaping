@@ -12,7 +12,7 @@ export const metadata = {
 
 const title = "Our Projects";
 const desc =
-  "We make gardens in Santa Fe look amazing! We specialize in hardscaping, irrigation systems, water features and maintenance, and help clear snow in winter. Evergreen Landscaping makes outdoor spaces livable, safe, and easy to enjoy.";
+  "Evergreen Landscaping transforms gardens and yards in Santa Fe with expert hardscaping, efficient irrigation systems, custom water features, and year-round landscape maintenance — including snow removal in winter. We make outdoor spaces beautiful, safe, and easy to enjoy.";
 const imgsrc = "/3.webp";
 
 const LazyProjectGallery = dynamic(
