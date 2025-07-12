@@ -37,7 +37,7 @@ const services = [
       "Pergolas & Gazebos",
       "Driveway Installation",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/steps.webp",
   },
   {
     id: "landscaping",
@@ -53,7 +53,7 @@ const services = [
       "Mulching & Edging",
       "Seasonal Plantings",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/39.webp",
   },
   {
     id: "water-features",
@@ -69,7 +69,7 @@ const services = [
       "Water Garden Installation",
       "Pond Maintenance",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/4.webp",
   },
   {
     id: "maintenance",
@@ -85,7 +85,7 @@ const services = [
       "Weed Management",
       "Seasonal Cleanup",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/ourwork7.webp",
   },
   {
     id: "irrigation",
@@ -117,7 +117,7 @@ const services = [
       "Commercial Services",
       "Emergency Response",
     ],
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/snowremoval.webp",
   },
 ];
 
@@ -188,7 +188,7 @@ const Page = () => {
                       !isEven ? "lg:grid-flow-col-dense" : ""
                     }`}
                   >
-                    <div className={isEven ? "lg:order-1" : "lg:order-2"}>
+                    <div className={`${isEven ? "lg:order-1" : "lg:order-2"}  lg:order-2 order-1`}>
                       <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6">
                         <div className="p-3 bg-primary rounded-full mr-4">
                           <IconComponent className="h-8 w-8 text-[#4ade80]" />
