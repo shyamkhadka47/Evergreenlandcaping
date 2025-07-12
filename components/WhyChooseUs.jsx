@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="bg-white/10 rounded-full p-4 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <Star className="h-10 w-10" />
+                <Star className="h-10 w-10 text-btnsecondary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">
                 Expert Craftsmanship
@@ -32,7 +32,7 @@ const WhyChooseUs = () => {
 
             <div className="text-center">
               <div className="bg-white/10 rounded-full p-4 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <CheckCircle className="h-10 w-10" />
+                <CheckCircle className="h-10 w-10 text-btnsecondary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Quality Guaranteed</h3>
               <p className="opacity-90">
@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
 
             <div className="text-center">
               <div className="bg-white/10 rounded-full p-4 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <Leaf className="h-10 w-10" />
+                <Leaf className="h-10 w-10 text-btnsecondary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Eco-Friendly</h3>
               <p className="opacity-90">
@@ -52,7 +52,7 @@ const WhyChooseUs = () => {
 
             <div className="text-center">
               <a href={`tel:${phone1}`} className="bg-white/10 rounded-full p-4 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <Phone className="h-10 w-10" />
+                <Phone className="h-10 w-10 text-btnsecondary" />
               </a>
               <a href={`tel:${phone1}`} className="text-xl font-semibold mb-2">24/7 Support</a>
               <p className="opacity-90">
