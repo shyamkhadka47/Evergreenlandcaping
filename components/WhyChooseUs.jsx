@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
     <div>
       {" "}
       <section className="py-16 bg-primary text-[#4ade80] rounded-3xl ">
-        <div className="container mx-auto px-4">
+        <div className="px-[5%] md:px-[10%]">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">
               Why Choose Evergreen Landscaping?
@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
                 Expert Craftsmanship
               </h3>
               <p className="opacity-90">
-                20+ years of professional landscaping experience
+                50+ years of combined professional landscaping experience
               </p>
             </div>
 
