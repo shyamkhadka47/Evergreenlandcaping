@@ -7,7 +7,7 @@ import Link from "next/link"
 
 // CTA Banner data
 const ctaData = {
-  heading: "Looking For An Experience Landscaper?",
+  heading: "Looking For An Experienced Landscaper?",
   phoneNumber:phone1,
   phoneLink: `tel:${phone1}`,
   buttonText: "Contact Us",

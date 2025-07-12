@@ -45,7 +45,7 @@ export default function GardeningSection() {
                 spaceBetween={20}
                 slidesPerView={1}
                 
-                autoplay={{ delay: 2000 }}
+                autoplay={{ delay: 3500 }}
                 className="h-[500px] rounded-3xl shadow-2xl overflow-hidden"
               >
                 {sliderImages.map((src, index) => (

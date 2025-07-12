@@ -19,7 +19,7 @@ const geistMono = localFont({
 
 export const metadata={
   title:{
-    // default:"Evergreen Landscaping Best Landscaping in Santa Fe NM.",
+    default:"Landscaping in Santa Fe NM.",
     template:" %s | Evergreen Landscaping Best Landscaping in Santa Fe NM."
   }
 }

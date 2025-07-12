@@ -53,7 +53,6 @@ const images = [
   "43.webp",
   "44.webp",
   "45.webp",
-  "ourwork1.webp",
   "ourwork2.webp",
   "ourwork3.webp",
   "ourwork4.webp",

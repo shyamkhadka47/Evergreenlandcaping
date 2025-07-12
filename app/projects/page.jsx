@@ -1,6 +1,6 @@
 import CTA from "@/components/CTA";
 import Hero from "@/components/Hero";
-import ProjectGallery from "@/components/ProjectGallery";
+
 import dynamic from "next/dynamic";
 import React from "react";
 
@@ -12,7 +12,7 @@ export const metadata = {
 
 const title = "Our Projects";
 const desc =
-  "We helped make a yard in Santa Fe look amazing! We added strong rocks (hardscaping), a smart watering system (irrigation), and helped clear snow in winter. Evergreen Landscaping makes outdoor spaces pretty, safe, and easy to enjoy.";
+  "We make gardens in Santa Fe look amazing! We specialize in hardscaping, irrigation systems, water features and maintenance, and help clear snow in winter. Evergreen Landscaping makes outdoor spaces livable, safe, and easy to enjoy.";
 const imgsrc = "/3.webp";
 
 const LazyProjectGallery = dynamic(

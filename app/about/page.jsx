@@ -5,11 +5,12 @@ import Image from "next/image";
 import CTA from "@/components/CTA";
 import Link from "next/link";
 import WhyChooseUs from "@/components/WhyChooseUs";
-
-export const metadata={
-  title:"About Us",
-  description:"Evergreen Landscaping in Santa Fe offers a range of commercial and residential landscaping services to meet all your needs."
+export const metadata = {
+  title: "About Us",
+  description: "Evergreen Landscaping in Santa Fe offers a range of commercial and residential landscaping services. Trusted experts in Santa Fe for landscaping services."
 }
+
+
 
 const title = "About Us";
 const desc =
@@ -46,24 +47,9 @@ export default function Page(){
                     height={700}
                     className="w-full h-full object-cover "
                   />
-                  {/* <div className="absolute bottom-6 right-6 bg-orange-500 text-white rounded-2xl p-6 shadow-2xl">
-                    <div className="text-center">
-                      <div className="text-5xl font-bold mb-3">25+</div>
-                      <div className="text-sm font-semibold">
-                        Years of
-                        <br />
-                        Experience
-                      </div>
-                    </div>
-                  </div> */}
+                 
                 </div>
 
-                {/* <div className="absolute -top-4 -right-4 w-24 h-24 bg-green-500 rounded-full flex items-center justify-center shadow-2xl ">
-                  <div className="text-white text-center">
-                    <div className="text-xs font-bold">Landscaping</div>
-                    <div className="text-xs">EXPERTS</div>
-                  </div>
-                </div> */}
               </div>
             </div>
 
