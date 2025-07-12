@@ -133,8 +133,8 @@ export default function Page(){
               <div className="group hover:shadow-2xl transition-all duration-500 border-0 bg-white/80 backdrop-blur-sm rounded-2xl">
                 <div className="p-8">
                   <div className="flex items-start gap-6">
-                    <div className="bg-primary/10 p-4 rounded-2xl hidden sm:block">
-                      <Users className=" w-8 h-8  text-primary" />
+                    <div className="bg-primary p-4 rounded-2xl hidden sm:block">
+                      <Users className=" w-8 h-8 text-[#4ade80] " />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -162,8 +162,8 @@ export default function Page(){
               <div className="group hover:shadow-2xl transition-all duration-500 border-0 bg-white/80 backdrop-blur-sm rounded-2xl">
                 <div className="p-8">
                   <div className="flex items-start gap-6">
-                    <div className="bg-primary/10 p-4 rounded-2xl hidden sm:block">
-                      <TreePine className="  w-8 h-8 text-primary" />
+                    <div className="bg-primary p-4 rounded-2xl hidden sm:block">
+                      <TreePine className="  w-8 h-8 text-[#4ade80]" />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold text-gray-900 mb-4">
