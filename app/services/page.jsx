@@ -1,6 +1,7 @@
 import CTA from "@/components/CTA";
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import { phone1 } from "@/utils/sitesetting";
 import {
   Hammer,
   TreePine,
@@ -9,6 +10,7 @@ import {
   Droplets,
   Snowflake,
   CheckCircle,
+  ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -215,10 +217,10 @@ const Page = () => {
                       </div>
 
                       <div className="flex flex-wrap gap-4">
-                        <Link href={"/contact"} className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-[#4ade80] hover:bg-green-700 h-10 px-4 py-2">
-                          Get Free Estimate
-                        </Link>
-                        <Link href={"/project"} className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-200 bg-transparent hover:bg-gray-100 hover:text-gray-900 h-10 px-4 py-2">
+                        <a href={`tel:${phone1}`} className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-[#4ade80] hover:bg-green-700 h-10 px-4 py-2">
+                          Call Us Now <span><ArrowRight className="text-btnsecondary ml-2"/></span>
+                        </a>
+                        <Link href={"/projects"} className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-gray-200 bg-transparent hover:bg-gray-100 hover:text-gray-900 h-10 px-4 py-2">
                           View Portfolio
                         </Link>
                       </div>

@@ -27,12 +27,12 @@ export default function Hero({ title, desc, imgsrc }) {
             </p>
             <h1 className="text-white text-lg">{desc}</h1>
             <div className="flex gap-2">
-              <Link
+              <a
                 href={`tel:${phone1}`}
                 className="py-2 px-4 rounded-2xl bg-btnsecondary text-primary font-bold flex gap-2"
               >
                <Phone size={20} className="text-primary mt-1"/><span > {phone1}</span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

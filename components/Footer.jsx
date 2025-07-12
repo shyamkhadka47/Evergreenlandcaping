@@ -105,14 +105,16 @@ export default function Footer() {
                 const IconComponent = contact.icon
                 return (
                   <div key={index} className="flex items-start space-x-3">
-                    <IconComponent className="w-4 h-4 text-[#4ade80] mt-1 flex-shrink-0" />
+                   <a  href={contact.href} className="flex gap-2">
+                   <IconComponent className="w-4 h-4 text-[#4ade80] mt-1 flex-shrink-0" />
                    
-                      <Link
-                        href={contact.href}
-                        className={`text-gray-300 hover:text-[#4ade80] transition-colors duration-200 text-sm ${contact.customstyle ? contact.customstyle : ""} `}
-                      >
-                        {contact.text}
-                      </Link>
+                   <span
+                    
+                     className={`text-gray-300 hover:text-[#4ade80] transition-colors duration-200 text-sm ${contact.customstyle ? contact.customstyle : ""} `}
+                   >
+                     {contact.text}
+                   </span>
+                   </a>
                     
                   </div>
                 )

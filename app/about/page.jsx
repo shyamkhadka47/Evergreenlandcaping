@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import CTA from "@/components/CTA";
 import Link from "next/link";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export const metadata={
   title:"About Us",
@@ -189,6 +190,7 @@ export default function Page(){
           </div>
         </div>
       </section>
+      <WhyChooseUs/>
       <CTA/>
     </div>
   );

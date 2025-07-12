@@ -44,17 +44,17 @@ export default function CTA() {
           {/* Right - Contact Info */}
           <div className="flex flex-col items-center lg:items-end space-y-4 flex-shrink-0">
             {/* Phone Number */}
-            <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 flex items-center justify-center">
+            <a  href={ctaData.phoneLink} className="flex items-center space-x-3">
+              <span className="w-8 h-8 flex items-center justify-center">
                 <Phone className="w-6 h-6 text-white" />
-              </div>
-              <Link
-                href={ctaData.phoneLink}
+              </span>
+              <span
+               
                 className="text-white text-2xl lg:text-3xl font-bold hover:text-white/90 transition-colors duration-200"
               >
                 {ctaData.phoneNumber}
-              </Link>
-            </div>
+              </span>
+            </a>
 
             {/* Contact Button */}
             <div>

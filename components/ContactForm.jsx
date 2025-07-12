@@ -147,17 +147,17 @@ const ContactForm = () => {
                   <p>{`${address}`}</p>
                 </div>
                 <div className="flex items-center">
-                  <FaPhone className="w-6 h-6 text-secondary mr-2" />
-                  <Link href={`tel:${phone1}`}>Phone: {phone1}</Link>
+                 <span> <FaPhone className="w-6 h-6 text-secondary mr-2" /></span>
+                  <a href={`tel:${phone1}`}>Phone: {phone1}</a>
                 </div>
                 <div className="flex items-center">
-                  <FaPhone className="w-6 h-6 text-secondary mr-2" />
-                  <Link href={`tel:${phone2}`}>Phone: {phone2}</Link>
+                  <span><FaPhone className="w-6 h-6 text-secondary mr-2" /></span>
+                  <a href={`tel:${phone2}`}>Phone: {phone2}</a>
                 </div>
 
                 <div className="flex items-center">
-                  <FaEnvelope className="w-6 h-6 text-secondary mr-2" />
-                  <Link href={`mailto:${email}`}>Email: {email}</Link>
+                 <span> <FaEnvelope className="w-6 h-6 text-secondary mr-2" /></span>
+                  <a href={`mailto:${email}`}>Email: {email}</a>
                 </div>
                 <div style={{ marginTop: "30px" }}>
                   <h3 className="text-xl font-semibold mb-2">Working Hours</h3>

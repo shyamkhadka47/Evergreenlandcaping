@@ -88,7 +88,7 @@ export default function GardeningSection() {
 
             {/* Contact Button */}
             <div>
-              <Link
+              <a
                 href={`tel:${sectionData.buttonHref}`}
                 className="inline-flex items-center space-x-2 bg-primary text-white px-8 py-4 rounded-full font-semibold hover:bg-[#247260] transition-colors duration-200 shadow-lg hover:shadow-xl"
               >
@@ -96,7 +96,7 @@ export default function GardeningSection() {
                 <span className="text-btnsecondary">
                   {sectionData.buttonText}
                 </span>
-              </Link>
+              </a>
             </div>
 
             {/* Customer Satisfaction */}

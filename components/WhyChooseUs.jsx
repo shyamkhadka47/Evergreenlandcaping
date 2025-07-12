@@ -1,3 +1,4 @@
+import { phone1 } from "@/utils/sitesetting";
 import { CheckCircle, Leaf, Phone, Star } from "lucide-react";
 import React from "react";
 
@@ -50,10 +51,10 @@ const WhyChooseUs = () => {
             </div>
 
             <div className="text-center">
-              <div className="bg-white/10 rounded-full p-4 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+              <a href={`tel:${phone1}`} className="bg-white/10 rounded-full p-4 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
                 <Phone className="h-10 w-10" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
+              </a>
+              <a href={`tel:${phone1}`} className="text-xl font-semibold mb-2">24/7 Support</a>
               <p className="opacity-90">
                 Always available for emergency services and support
               </p>
